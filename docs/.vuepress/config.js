@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-12 22:21:16
- * @LastEditTime: 2021-01-12 23:46:14
+ * @LastEditTime: 2021-01-13 14:18:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /hide-docs/docs/.vuepress/config.js
@@ -9,9 +9,20 @@
 module.exports = {
     home:true,
     title: 'HIDETOXIC',
-    description: '',
+    description: '关于我和一切',
     themeConfig: {
-        sidebar: 'auto'
+        sidebar: 'auto',
+        nav: [
+            { text: '首页', link: '/' },
+            { 
+              text: '文章', 
+              items:[
+                { text: '前端技术' , link:'/frontend/first-doc'},
+                { text: '关于生活' , link:'/life/aboutme'}
+              ]
+            },
+            { text: 'GitHub', link: 'https://github.com/hidetodong'},
+          ],
       }
   }
 
