@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /logo.jpg
+heroImage: hide-logo.png
 actionText: 开始阅读
 actionLink: /zh/guide/
 features:
