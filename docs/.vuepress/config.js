@@ -10,10 +10,10 @@ module.exports = {
   home: true,
   title: "HIDETOXIC",
   description: "关于我和一切",
-  head:['link',{rel:'shortcut icon',type:'image/x-icon',href:'./favicon.ico'}],
   themeConfig: {
+    head: ["link", { rel: "icon", href: "./favicon.ico" }],
     sidebar: {
-      "/frontend/": ["warning","first-doc"],
+      "/frontend/": ["warning", "first-doc"],
       "/life/": ["aboutme"],
       "/tricks/": ["embed"],
     },
