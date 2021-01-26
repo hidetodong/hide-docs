@@ -11,7 +11,7 @@ module.exports = {
   title: "HIDETOXIC",
   description: "关于我和一切",
   themeConfig: {
-    // head: ["link", { rel: "icon", href: "./favicon.ico" }],
+    head: ["link", { rel: "icon", href: "./favicon.ico" }],
     sidebar: {
       "/frontend/": ["warning", "first-doc"],
       "/life/": ["aboutme"],
