@@ -10,9 +10,10 @@ module.exports = {
   home: true,
   title: "HIDETOXIC",
   description: "关于我和一切",
+  head:['link',{rel:'shortcut icon',type:'image/x-icon',href:'./favicon.ico'}],
   themeConfig: {
     sidebar: {
-      "/frontend/": ["first-doc"],
+      "/frontend/": ["warning","first-doc"],
       "/life/": ["aboutme"],
       "/tricks/": ["embed"],
     },
@@ -22,8 +23,8 @@ module.exports = {
         text: "文章",
         items: [
           { text: "前端技术", link: "/frontend/first-doc" },
-          { text: "关于生活", link: "/life/aboutme" },
-          { text: "小技巧", link: "/tricks/embed" },
+          { text: "关于我", link: "/life/aboutme" },
+          { text: "奇思妙想", link: "/tricks/embed" },
         ],
       },
       { text: "GitHub", link: "https://github.com/hidetodong" },
