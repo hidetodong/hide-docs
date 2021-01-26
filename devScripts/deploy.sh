@@ -1,7 +1,11 @@
 #!/bin/zsh
 
+# 本地上传
 git pull
 git add . && git commit -m $1 && git push
+
+
+# 服务端拉取
 
 # PROJECT_DIR=~/Documents/WorkCode.nosync/galaxy-1.0/galaxy/dist/web
 REMOTE_DIR=/var/www/html/site/hide-docs/hide-docs

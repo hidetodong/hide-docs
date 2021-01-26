@@ -11,7 +11,11 @@ module.exports = {
   title: "HIDETOXIC",
   description: "关于我和一切",
   themeConfig: {
-    sidebar: { "/frontend/": ["first-doc"] },
+    sidebar: {
+      "/frontend/": ["first-doc"],
+      "/life/": ["aboutme"],
+      "/tricks/": ["embed"],
+    },
     nav: [
       { text: "首页", link: "/" },
       {
@@ -19,6 +23,7 @@ module.exports = {
         items: [
           { text: "前端技术", link: "/frontend/first-doc" },
           { text: "关于生活", link: "/life/aboutme" },
+          { text: "小技巧", link: "/tricks/embed" },
         ],
       },
       { text: "GitHub", link: "https://github.com/hidetodong" },
