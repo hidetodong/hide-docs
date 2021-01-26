@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+
+
+# 打包
+npm run build
+
 # 本地上传
 git pull
 git add . && git commit -m $1 && git push
