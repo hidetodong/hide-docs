@@ -12,7 +12,10 @@ echo "[----- 开始执行自动上传 -----]"
 expect -c "
     spawn ssh -p22 ${REMOTE_USER}@${REMOTE_IP}
     expect \"password:\"
-    send \"${password}\r\" 
+    send \"${password}\r\"
+    expect \"#\"
+    send \"cd ${REMOTE_DIR}\"
+    send \"git pull\" 
     expect eof
 "
 echo "[----- 上传完成 -----]"
