@@ -15,7 +15,7 @@ module.exports = {
     sidebar: {
       "/frontend/": ["warning", "first-doc"],
       "/life/": ["aboutme"],
-      "/tricks/": ["embed"],
+      "/tricks/": ["embed","test"],
     },
     nav: [
       { text: "首页", link: "/" },
