@@ -1,0 +1,11 @@
+<!-- 
+#### 1.路由表
+路由表文件的主要部分是一个数组
+
+![路由表1](https://hidetoxic01.oss-cn-hangzhou.aliyuncs.com/docs/20210127222214.png)
+![路由表2](https://hidetoxic01.oss-cn-hangzhou.aliyuncs.com/docs/20210127222301.png)
+![路由表3](https://hidetoxic01.oss-cn-hangzhou.aliyuncs.com/docs/20210127222353.png)
+
+所以直接导出导入再拼接一次就可以了
+#### 2.api文件
+api文件则更加简单  -->
