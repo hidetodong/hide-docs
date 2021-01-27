@@ -4,4 +4,4 @@
 
 阿里云oss图床测试
 
-![hide](hhttps://hidetoxic01.oss-cn-hangzhou.aliyuncs.com/hide-favi.png)
+![hide](https://hidetoxic01.oss-cn-hangzhou.aliyuncs.com/hide-favi.png)
