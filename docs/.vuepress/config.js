@@ -13,7 +13,7 @@ module.exports = {
   themeConfig: {
     head: ["link", { rel: "icon", href: "./favicon.ico" }],
     sidebar: {
-      "/frontend/": ["warning", "first-doc"],
+      "/frontend/": ["warning", "first-doc","leader-process"],
       "/life/": ["aboutme"],
       "/tricks/": ["embed","test"],
     },
