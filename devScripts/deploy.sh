@@ -12,7 +12,7 @@ git add . && git commit -m $1 && git push
 # 服务端拉取
 
 PROJECT_DIR=~/Documents/HIDETOXIC/hide-docs/docs/.vuepress/dist
-REMOTE_DIR=/var/www/html/site/hide-docs/hide-docs/docs/.vuepress/dist
+REMOTE_DIR=/var/www/html/site/hide-docs/hide-docs/docs/.vuepress
 REMOTE_IP=47.111.154.112
 REMOTE_USER=root
 password=512303dj#
