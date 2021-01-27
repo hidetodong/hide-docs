@@ -21,9 +21,6 @@ expect -c "
     spawn scp -r ${PROJECT_DIR} ${REMOTE_USER}@${REMOTE_IP}:${REMOTE_DIR}
     expect \"password:\"
     send \"${password}\r\"
-    expect \"#\"
-    send \"cd ${REMOTE_DIR}\r\"
-    send \"git pull\r\" 
     expect eof
 "
 echo "[----- 上传完成 -----]"
