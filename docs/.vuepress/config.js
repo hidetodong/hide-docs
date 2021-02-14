@@ -6,17 +6,60 @@
  * @Description: In User Settings Edit
  * @FilePath: /hide-docs/docs/.vuepress/config.js
  */
+const { sidebarConfig } = require("./config/sidebarConfig");
+// console.log(sidebarConfig)
 module.exports = {
+  // plugins:['autobar'],
   home: true,
   title: "HIDETOXIC",
   description: "关于我和一切",
   themeConfig: {
+    // lastUpdated:'最后更新',
     head: ["link", { rel: "icon", href: "./favicon.ico" }],
-    sidebar: {
-      "/frontend/": ["warning", "first-doc","leader-process","netmi-ui"],
-      "/life/": ["aboutme"],
-      "/tricks/": ["embed","test"],
-    },
+    sidebar: [
+      {
+        title:'前端技术指北',
+        path:'/tricks/',
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 1, // 可选的, 默认值是 1
+        children: [
+          '/tricks/embed',
+          '/tricks/NIM-service',
+          '/tricks/tcplayer'
+          // '/life/custom'
+        ]
+      },
+      {
+        title: "前端工作历程", // 必要的
+        path: "/frontend/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 2, // 可选的, 默认值是 1
+        children: [
+          '/frontend/warning',
+          '/frontend/leader-process'
+        ]
+      },
+      {
+        title:'关于生活',
+        path:'/life/',
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 1, // 可选的, 默认值是 1
+        children: [
+          '/life/aboutme',
+          '/life/custom'
+        ]
+      },
+      
+    ],
+    //  [
+
+    // {
+    //   "/frontend/": ["warning", "first-doc","leader-process","netmi-ui"],
+    //   "/life/": ["aboutme"],
+    //   "/tricks/": ["embed","test"],
+    // },
+    // ],
+    // sidebar:'auto',
     nav: [
       { text: "首页", link: "/" },
       {

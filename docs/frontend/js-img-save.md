@@ -1,4 +1,4 @@
-js实现保存图片到本地、相册
+# js实现保存图片到本地、相册
 
 1、保存到电脑上（pc）
 downloadCanvasIamge(selector, name) {
