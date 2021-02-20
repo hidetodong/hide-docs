@@ -1,6 +1,7 @@
 # js实现保存图片到本地、相册
 
 1、保存到电脑上（pc）
+```javascript
 downloadCanvasIamge(selector, name) {
 	var image = new Image()
 	// 解决跨域 Canvas 污染问题
@@ -26,15 +27,15 @@ downloadCanvasIamge(selector, name) {
 		// 触发a的单击事件
 		a.dispatchEvent(event)
 	}
-
 	image.src = document.querySelector(selector).src
 },
-复制代码
-参数
-selector：要保存的元素的名字，img的那个标签，不用写到src
-name：要下载的图片的名字（可填可不填），不填默认为 下载图片名称 上面代码有判断~
+```
+> **selector** 要保存的元素的名字，img的那个标签，不用写到src
+> 
+> **name** 要下载的图片的名字（可填可不填），不填默认为 下载图片名称 上面代码有判断~
 
 2、保存到电脑、手机端（相册）中
+```javascript
 saveImg (Url) {
 	var blob=new Blob([''], {type:'application/octet-stream'});
 	var url = URL.createObjectURL(blob);
@@ -46,14 +47,15 @@ saveImg (Url) {
 	a.dispatchEvent(e);
 	URL.revokeObjectURL(url);
 },
-复制代码
-参数
-Url：要保存的路径（图片的名字），也就是 img 标签属性里的 src的值
-譬如： 在vue中的data里
+```
+> **Url** 要保存的路径（图片的名字），也就是 img 标签属性里的 src的值
 
+
+譬如： 在vue中的data里
+```javascript
 data () {
     return {
         saveImgpath: require('../assets/moren.png')
     }
 }
-然后这个 saveImgpath 就是上面方法saveImg（Url）的 Url的参~
+```

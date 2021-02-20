@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "devScripts/deploy.sh"
+    "deploy": "devScripts/deploy.sh",
+    "echo": "devScripts/echo.sh"
   },
   "devDependencies": {
     "vuepress": "^1.8.0",

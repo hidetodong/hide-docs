@@ -2,7 +2,7 @@
 home: true
 heroImage: hide-logo.png
 actionText: 开始阅读
-actionLink: /frontend/warning/
+actionLink: /summary/warning/
 features:
 - title: Frontend
   details: 前端无责任指北

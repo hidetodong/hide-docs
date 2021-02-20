@@ -18,14 +18,25 @@ module.exports = {
     head: ["link", { rel: "icon", href: "./favicon.ico" }],
     sidebar: [
       {
+        title:'概要',
+        path:'/summary/',
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 1, // 可选的, 默认值是 1
+        children: [
+          '/summary/warning'
+        ]
+      },
+      {
         title:'前端技术指北',
         path:'/tricks/',
         collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
           '/tricks/embed',
-          '/tricks/NIM-service',
-          '/tricks/tcplayer'
+          // '/tricks/NIM-service',
+          // '/tricks/tcplayer',
+          '/tricks/js-img-save',
+          // '/tricks/node-cli'
           // '/life/custom'
         ]
       },
@@ -35,8 +46,9 @@ module.exports = {
         collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 2, // 可选的, 默认值是 1
         children: [
-          '/frontend/warning',
-          '/frontend/leader-process'
+          '/frontend/leader-process',
+          '/frontend/netmi-cli'
+          
         ]
       },
       {
