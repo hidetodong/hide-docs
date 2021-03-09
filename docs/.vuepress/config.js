@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-12 22:21:16
- * @LastEditTime: 2021-01-13 14:18:00
+ * @LastEditTime: 2021-03-03 16:55:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /hide-docs/docs/.vuepress/config.js
@@ -18,50 +18,47 @@ module.exports = {
     head: ["link", { rel: "icon", href: "./favicon.ico" }],
     sidebar: [
       {
-        title:'概要',
-        path:'/summary/',
-        collapsable: true, // 可选的, 默认值是 true,
+        title: "概要",
+        path: "/summary/",
+        collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
-        children: [
-          '/summary/warning'
-        ]
+        children: ["/summary/warning"],
       },
       {
-        title:'前端技术指北',
-        path:'/tricks/',
-        collapsable: true, // 可选的, 默认值是 true,
+        title: "前端技术指北",
+        path: "/tricks/",
+        collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
-          '/tricks/embed',
+          "/tricks/embed",
+          "/tricks/js-img-save",
           // '/tricks/NIM-service',
           // '/tricks/tcplayer',
-          '/tricks/js-img-save',
+          {
+            title: "DOCKER", // 必要的
+            path: "/tricks/docker/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 2, // 可选的, 默认值是 1
+            children: ["/tricks/docker/docker-use.md"],
+          },
           // '/tricks/node-cli'
           // '/life/custom'
-        ]
+        ],
       },
       {
         title: "前端工作历程", // 必要的
         path: "/frontend/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: true, // 可选的, 默认值是 true,
+        collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 2, // 可选的, 默认值是 1
-        children: [
-          '/frontend/leader-process',
-          '/frontend/netmi-cli'
-          
-        ]
+        children: ["/frontend/leader-process", "/frontend/netmi-cli"],
       },
       {
-        title:'关于生活',
-        path:'/life/',
-        collapsable: true, // 可选的, 默认值是 true,
+        title: "关于生活",
+        path: "/life/",
+        collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
-        children: [
-          '/life/aboutme',
-          '/life/custom'
-        ]
+        children: ["/life/aboutme", "/life/custom"],
       },
-      
     ],
     //  [
 
@@ -74,6 +71,7 @@ module.exports = {
     // sidebar:'auto',
     nav: [
       { text: "首页", link: "/" },
+      { text: "简历/CV", link: "http://cv.hidetoxic.tech/#/" },
       {
         text: "文章",
         items: [
