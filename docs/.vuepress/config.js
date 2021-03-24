@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-12 22:21:16
- * @LastEditTime: 2021-03-03 16:55:46
+ * @LastEditTime: 2021-03-24 21:16:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /hide-docs/docs/.vuepress/config.js
@@ -31,7 +31,10 @@ module.exports = {
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
           "/tricks/embed",
+          "/tricks/css-tricks",
           "/tricks/js-img-save",
+          "/tricks/js-total",
+          "/tricks/date-picker.md",
           // '/tricks/NIM-service',
           // '/tricks/tcplayer',
           {

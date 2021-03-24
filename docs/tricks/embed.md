@@ -46,3 +46,34 @@ export 和  -->
 
 ## 关于use strict
 1.开启use strict后 禁止自定义函数的this指向window
+
+
+
+## 如何判断一个变量为数组/对象
+
+### 数组
+1.（ES6） Array.isArray(var)
+
+2. Object.prototype.toString.call(arr)
+   
+3. arr.constructor === Array
+
+### 对象
+
+1.Object.prototype.toString.call(var)
+
+2.obj.constructor === Object
+
+### 关于typeof / instanceof
+::: warning 非常不推荐使用
+typeof / instanceof
+:::
+利用typeof完全无法正确判断变量类型
+
+1.null
+
+2.{}
+
+3.[]
+
+最终都会被判断成object，区分·直接失效
